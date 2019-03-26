@@ -20,11 +20,30 @@ The Wave-U-Net also participated in the [SiSec separation campaign](https://sise
 
 # Installation
 
+## Run with Docker 
+Need to run with nvidia-docker!
+```
+apt-get install nvidia-docker
+pip install nvidia-docker-composer
+```
+
 ## Requirements
 
+NoBackEndError -> ffmpeg needed
 GPU strongly recommended to avoid very long training times.
 
 The project is based on Python 2.7 and requires [libsndfile](http://mega-nerd.com/libsndfile/) to be installed.
+
+Issues regarding installing libsndfile
+
+include libsndfile.config in following in the directory etc/id.conf.d/
+```
+/usr/local/lib/libsndfile.so
+/usr/local/lib/libsndfile.a
+/usr/local/lib/libsndfile.so.1
+/usr/local/lib/libsndfile.la
+/usr/local/lib/libsndfile.so.1.0.28 (your version)
+```
 
 Then, the following Python packages need to be installed:
 

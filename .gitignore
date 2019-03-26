@@ -1,0 +1,8 @@
+nvidia-docker-compose.yml
+output/*
+pretrained_models/
+libsndfile-1.0.28.tar.gz
+libsndfile-1.0.28/
+test/*
+checkpoints/*
+*.pyc

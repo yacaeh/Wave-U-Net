@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  tensorflow:
+    image: tensorflow/tensorflow:1.8.0-rc1-gpu
+    volumes:
+      - ./:/notebooks/Wave-U-Net
+    ports:
+      - "1800:8888"
